@@ -1,0 +1,17 @@
+<html>
+    <head>
+ <h1> Cadastro </h1>
+    </head>
+    <body>
+        <form action="{% url 'cadrastrar' %}" method="POST">
+             {% csrf_token %}
+            <input type="texto" placeholder="username" name="username">
+            <br>
+            <input type="email" placeholder="email" name="email">
+            <br>
+            <input type="password" placeholder="senha" name="senha">
+            <br>
+            <input type="submit" value="cadastrar">
+        </form>
+    </body>
+</html>
